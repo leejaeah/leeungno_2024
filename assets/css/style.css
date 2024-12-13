@@ -1,0 +1,128 @@
+/* font */
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+/* commoon */
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+
+  /* box-sizing: border-box; */
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* custom */
+/* #wrap시작 */
+.main {
+  width: 1920px;
+  height: 1080px;
+  background-color: #fff;
+}
+.main > img {
+  width: 1920px;
+  height: 1011px;
+  margin-top: 82px;
+  position: absolute;
+  left: 0;
+  top: 82px;
+}
+.main header {
+  display: flex;
+  margin: 34px 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .logo img {
+  width: 240px;
+}
+.main .menu {
+  display: flex;
+}
+.main .menu ul {
+  display: flex !important;
+  align-items: center;
+  display: none;
+  margin-top: 0px !important;
+}
+.main .menu ul li:last-child a {
+  padding-right: 50px;
+}
+.main .menu ul a {
+  font-size: 30px;
+  display: block;
+  padding: 0 25px;
+}
+.main .menu img {
+  width: 86px;
+  height: 76px;
+}
+.main_txt {
+  width: 718px;
+  height: 184px;
+  background-image: url(../img/main__text.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 180px 80px;
+}
+.main_blank {
+  width: 230px;
+  height: 91px;
+  background-image: url(../img/main_page_blank.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px 1124px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 100px solid greenyellow; */
+}
+footer img {
+  width: 1268px;
+  height: 76px;
+  margin: 0px 60px;
+}
+footer h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: end;
+  text-decoration: underline;
+  margin-bottom: 100px;
+  padding: 0;
+  margin-right: 60px;
+}

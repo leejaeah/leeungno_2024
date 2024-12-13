@@ -1,0 +1,231 @@
+/* font */
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+/* commoon */
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* custom */
+header {
+  display: flex;
+  margin: 34px 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo img {
+  width: 240px;
+}
+header .menu {
+  display: flex;
+}
+header .menu ul {
+  display: flex !important;
+  align-items: center;
+  display: none;
+}
+header .menu ul li:last-child a {
+  padding-right: 50px;
+}
+header .menu ul a {
+  font-size: 30px;
+  display: block;
+  padding: 0 25px;
+}
+header .menu img {
+  width: 86px;
+  height: 76px;
+}
+.content1 {
+  height: 1241px;
+  margin-left: 72px;
+  position: relative;
+}
+.content1 .work_bg {
+  width: 931px;
+  margin-top: 381px;
+  margin-left: 260px;
+  position: absolute;
+}
+.content1 .content1__blank {
+  width: 602.92px;
+  margin-top: 328px;
+}
+.content1 .content1__txt {
+  width: 329px;
+  margin-top: 98.89px;
+  margin-left: 1191px;
+}
+.content1 .content1__name {
+  width: 180px;
+  margin-top: 48px;
+  margin-left: 1443px;
+}
+/* content1 끝 */
+
+/* .content2 시작 */
+.content2 {
+  width: 1613px;
+  height: 976px;
+  margin-left: 60px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.content2 .sliderWrap {
+  margin-top: 10px;
+  width: 200%;
+  display: flex;
+}
+.content2 .sliderWrap .art {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content2 .sliderWrap .box1 .art {
+  background-image: url(../img/art1.jpg);
+}
+.content2 .sliderWrap .box2 .art {
+  background-image: url(../img/art2.png);
+}
+.content2 .sliderWrap .box3 .art {
+  background-image: url(../img/art3.jpg);
+}
+.content2 .sliderWrap .box4 .art {
+  background-image: url(../img/art4.jpg);
+}
+.content2 .sliderWrap .box5 .art {
+  background-image: url(../img/art5.jpg);
+}
+.content2 .sliderWrap .box6 .art {
+  background-image: url(../img/art6.jpg);
+}
+.content2 .sliderWrap .box7 .art {
+  background-image: url(../img/art7.jpg);
+}
+.content2 .sliderWrap .box:first-child .art {
+  margin-left: 0;
+}
+.content2 .sliderWrap .box:last-child .art {
+  margin-right: 0;
+}
+.content2 .sliderWrap .art {
+  display: block;
+  width: 443px;
+  height: 647px;
+  margin: 16px 7px;
+}
+.content2 .sliderWrap a {
+  font-size: 30px;
+}
+.swiper-pagination {
+  display: none;
+}
+/* .content2 끝 */
+
+/* content3 시작 */
+.content3 {
+  width: 1843px;
+  margin-left: 60px;
+  overflow-y: auto;
+}
+.content3 .tittle {
+  margin-top: 34px;
+}
+.content3 .tittle img {
+  width: 367px;
+}
+.content3 .content3__txt {
+  margin-top: 129px;
+  margin-left: 651px;
+  width: 962px;
+  height: 149px;
+  background-image: url(../img/work_content3.png);
+}
+.content3 > div {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content3 .content3__txt__num1 {
+  background-image: url(../img/01_form.png);
+  width: 430px;
+  height: 100px;
+  margin-top: 129px;
+  margin-left: 1183px;
+}
+.content3 .content3__txt__num2 {
+  margin-top: 187px;
+  margin-left: 678px;
+  background-image: url(../img/02_Untitled.png);
+  width: 369px;
+  height: 100px;
+}
+.content3 .content3__txt__num3 {
+  margin-top: 215px;
+  margin-left: 0;
+  background-image: url(../img/03_Crowd.png);
+  width: 454px;
+  height: 100px;
+}
+.content3 .content3__txt__num4 {
+  margin-top: 91px;
+  margin-left: 795px;
+  background-image: url(../img/04_Where_Energy_Flows.png);
+  width: 818px;
+  height: 100px;
+  margin-bottom: 300px;
+}
+/* content3 끝 */
+
+/* footer시작 */
+footer {
+  height: 221px;
+  margin: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+footer img {
+  width: 1394px;
+  height: 76px;
+}
+footer h1 {
+  font-size: 49.37px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: end;
+  margin-left: 100px;
+}
+/* footer 끝 */

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>work</title>
+    <!-- css 라이브러리 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/workstyle.css" />
+    <!-- interfonts -->
+    <!-- HTML in your document's head -->
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html" target="_self"
+          ><img src="assets/img/logo.png" alt="logo"
+        /></a>
+      </div>
+      <nav class="menu">
+        <ul class="submenu">
+          <li><a href="about.html" target="_self">about</a></li>
+          <li><a href="work.html" target="_self">work</a></li>
+        </ul>
+        <a class="menu_logo" href="#"
+          ><img src="assets/img/nav.png" alt="nav"
+        /></a>
+      </nav>
+    </header>
+    <section class="content1">
+      <img class="work_bg" src="assets/img/work_bg.png" alt="workbg" />
+      <img
+        data-aos="fade-up"
+        class="content1__blank animate__animated"
+        src="assets/img/work_blank.png"
+        alt="blank"
+      />
+      <img
+        data-aos="fade-up"
+        class="content1__txt animate__animated"
+        src="assets/img/workcontent1.png"
+        alt="con1"
+      />
+      <img
+        data-aos="fade-up"
+        class="content1__name animate__animated"
+        src="assets/img/work_name.png"
+        alt="name"
+      />
+    </section>
+    <section class="content2">
+      <div
+        data-aos="fade-left"
+        class="swiper mySwiper animate__animated animate__delay-3s"
+      >
+        <div class="sliderWrap swiper-wrapper">
+          <div class="box box1 swiper-slide">
+            <ul>
+              <li><a href="#">군상_群像</a></li>
+              <li><a class="art" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="box box2 swiper-slide">
+            <ul>
+              <li><a href="#">군상_群像</a></li>
+              <li><a class="art" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="box box3 swiper-slide">
+            <ul>
+              <li><a href="#">군상_群像</a></li>
+              <li><a class="art" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="box box4 swiper-slide">
+            <ul>
+              <li><a href="#">군상_群像</a></li>
+              <li><a class="art" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="box box5 swiper-slide">
+            <ul>
+              <li><a href="#">군상_群像</a></li>
+              <li><a class="art" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="box box6 swiper-slide">
+            <ul>
+              <li><a href="#">군상_群像</a></li>
+              <li><a class="art" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="box box7 swiper-slide">
+            <ul>
+              <li><a href="#">군상_群像</a></li>
+              <li><a class="art" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="content3">
+      <div data-aos="fade-up" class="tittle animate__animated">
+        <img src="assets/img/content4__tittle.png" alt="ct" />
+      </div>
+
+      <div class="content3__txt"></div>
+      <div
+        data-aos="fade-up"
+        class="content3__txt__num1 animate__animated"
+      ></div>
+      <div
+        data-aos="fade-up"
+        class="content3__txt__num2 animate__animated animate__delay-1s"
+      ></div>
+      <div
+        data-aos="fade-up"
+        class="content3__txt__num3 animate__animated animate__delay-2s"
+      ></div>
+      <div
+        data-aos="fade-up"
+        class="content3__txt__num4 animate__animated animate__delay-3s"
+      ></div>
+    </section>
+
+    <footer data-aos="fade-up" class="animate__animated">
+      <img src="assets/img/about_footer.png" alt="footer" />
+      <a href="https://www.leeungnomuseum.or.kr/" target="_self">
+        <h1 class="link">
+          LEEUNGNO <br />
+          MUSEUM
+        </h1>
+      </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="assets/script/script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3.5,
+        spaceBetween: 0,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      $(".menu").mouseover(function () {
+        $(this).find(".submenu").stop().slideDown();
+      });
+      $(".menu").mouseout(function () {
+        $(this).find(".submenu").stop().slideUp();
+      });
+    </script>
+  </body>
+</html>

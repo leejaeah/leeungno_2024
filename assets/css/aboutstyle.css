@@ -1,0 +1,240 @@
+/* font */
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+/* commoon */
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+body {
+  overflow-x: hidden;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* custom */
+header {
+  display: flex;
+  margin: 34px 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo img {
+  width: 240px;
+}
+header .menu {
+  display: flex;
+}
+header .menu ul {
+  display: flex;
+  align-items: center;
+  /* display: none; */
+}
+header .menu ul li:last-child a {
+  padding-right: 50px;
+}
+header .menu ul a {
+  font-size: 30px;
+  display: block;
+  padding: 0 25px;
+}
+header .menu img {
+  width: 86px;
+  height: 76px;
+}
+
+/* content1 */
+.content1 {
+  width: 1920px;
+  margin-top: 225px;
+  height: 1269px;
+  margin-left: 60px;
+}
+.content1 .blank {
+  width: 230px;
+  display: block;
+  margin-left: 1498px;
+}
+.content1 .eng {
+  width: 1604px;
+  display: block;
+  margin-top: 47px;
+}
+.content1 .kr {
+  width: 1623px;
+  display: block;
+  margin-top: 96px;
+}
+
+/* content1 */
+
+/* .content2 시작  */
+.content2 {
+  width: 1920px;
+  height: 1230px;
+  margin-left: 60px;
+}
+.content2 .tittle {
+  margin-top: 68px;
+}
+.content2 .tittle img {
+  width: 199px;
+}
+.content2 .cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+.content2 .content2__txt_box {
+}
+.content2 .content2__txt_box .content2__line1 {
+  margin-top: 176px;
+}
+.content2 .content2__txt_box .content2__line1 img {
+  width: 983px;
+}
+.content2 .content2__txt_box .content2__line2 {
+  margin-top: 146px;
+}
+.content2 .content2__txt_box .content2__line2 img {
+  width: 604px;
+}
+.content2 .cont .content2__img {
+  width: 589px;
+  height: 589px;
+  background-image: url(../img/lee.png.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 247px;
+}
+/* .content2 끝 */
+
+/* .content3 시작 */
+.content3 {
+  width: 1920px;
+  height: 1164px;
+  margin-left: 64px;
+}
+.content3 .tittle {
+  margin-top: 56px;
+}
+.content3 .tittle img {
+  width: 202px;
+}
+.content3 .cont {
+  display: flex;
+  margin-top: 19px;
+  justify-content: space-between;
+}
+.content3 .cont .content3__txt_box {
+  margin-top: 126px;
+}
+.content3 .cont .content3__txt_box .content3__line1 {
+  width: 991px;
+}
+.content3 .cont .content3__txt_box .content3__line2 {
+  width: 1132px;
+  margin-top: 74px;
+}
+.content3 .cont .content3__img {
+  width: 552px;
+  height: 552.94px;
+  background-image: url(../img/about_what.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 217px;
+}
+/* .content3 끝 */
+
+/* .content4 시작 */
+.content4 {
+  width: 1920px;
+  height: 1329px;
+  margin-left: 60px;
+}
+.content4 .tittle {
+  margin-top: 10px;
+}
+.content4 .tittle img {
+  width: 199px;
+}
+.content4 .cont {
+  margin-top: 114px;
+  display: flex;
+}
+.content4 .cont video {
+  width: 700px;
+  height: 700px;
+  background-image: url(../img/artvideo.mp4);
+}
+.content4 .cont .content4__txt_box {
+  margin-left: 59px;
+}
+.content4 .cont .content4__txt_box .line1 {
+  width: 854px;
+}
+.content4 .cont .content4__blank {
+  background-image: url(../img/main_page_blank.png);
+  width: 230px;
+  height: 91px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 104px;
+}
+.content4 .cont .content4__txt_box .content4__line2 {
+  margin-top: 104px;
+}
+/* .content4 끝 */
+
+/* footer 시작 */
+footer {
+  width: 1920px;
+  width: 259px;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer img {
+  width: 1394px;
+  height: 76px;
+}
+footer h1 {
+  font-size: 49.37px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: end;
+
+  margin-left: 135px;
+}
+/* footer 끝 */
